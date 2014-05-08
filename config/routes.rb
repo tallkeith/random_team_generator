@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  
+  get "teams/number_teams" => "teams#number_teams"
+  
+  post "teams/create_teams" => "teams#create_teams"
+
   resources :teams
 
   resources :students
