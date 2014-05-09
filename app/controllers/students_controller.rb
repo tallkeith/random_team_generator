@@ -22,10 +22,7 @@ class StudentsController < ApplicationController
   def edit
   end
 
-  def show_students
-    @students = Student.all
-    @s_array = s_array = []
-  end
+
 
   # POST /students
   # POST /students.json
