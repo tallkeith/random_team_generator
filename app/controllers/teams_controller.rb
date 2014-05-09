@@ -21,6 +21,14 @@ class TeamsController < ApplicationController
   def edit
   end
 
+  def number_teams
+
+  end
+
+  def create_teams
+    @number_teams = params[:number_teams]
+  end
+
   # POST /teams
   # POST /teams.json
   def create
