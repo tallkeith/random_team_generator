@@ -1,0 +1,6 @@
+<% @students.each do |student| %>
+	
+	<% @s_array.push(student.first_name) %>
+	<% end %>
+<%= @s_array.shuffle %>
+

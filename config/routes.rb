@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get 'students/show_students' => 'students#show_students'
+
   resources :teams
 
   resources :students

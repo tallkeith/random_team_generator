@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
+    include StudentsHelper
 
   # GET /students
   # GET /students.json
@@ -19,6 +20,11 @@ class StudentsController < ApplicationController
 
   # GET /students/1/edit
   def edit
+  end
+
+  def show_students
+    @students = Student.all
+    @s_array = s_array = []
   end
 
   # POST /students
