@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'students/shuffle_students' => 'students#shuffle_students'
+ get 'students/shuffle_students' => 'students#shuffle_students'
   
   get "teams/number_teams" => "teams#number_teams"
   

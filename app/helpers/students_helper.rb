@@ -5,7 +5,11 @@ module StudentsHelper
     	@s_array = s_array = []
       		@students.each do |student|
         		@s_array.push(student.first_name)
-      	end
+      		end
+  	end
+
+  	def split_students
+  		
   	end
 
 end
