@@ -1,6 +1,6 @@
 module StudentsHelper
-	
- 	def show_students
+
+ 	def shuffle_students
     	@students = Student.all
     	@s_array = s_array = []
       		@students.each do |student|

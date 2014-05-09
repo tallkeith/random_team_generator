@@ -6,6 +6,7 @@ class StudentsController < ApplicationController
   # GET /students.json
   def index
     @students = Student.all
+    shuffle_students
   end
 
   # GET /students/1
@@ -21,8 +22,6 @@ class StudentsController < ApplicationController
   # GET /students/1/edit
   def edit
   end
-
-
 
   # POST /students
   # POST /students.json
