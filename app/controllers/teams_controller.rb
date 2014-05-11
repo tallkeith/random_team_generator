@@ -25,7 +25,7 @@ class TeamsController < ApplicationController
 
   end
 
-  def create_teams
+  def assign_teams
     @number_teams = params[:number_teams]
   end
 
