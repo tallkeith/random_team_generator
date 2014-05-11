@@ -1,10 +1,13 @@
 <h1>How many teams would you like?</h1>
 
 
-	
-    <%= number_field :number_teams %>
+<% @teams.each do |team| %>
+	<%= f.label :number_teams %><br>
+    <%= f.number_field :number_teams %>
 
 
 
+<% end%>
+ 
 
 
