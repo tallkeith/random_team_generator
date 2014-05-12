@@ -14,6 +14,15 @@ class StudentsController < ApplicationController
   def show
   end
 
+  def assign_teams
+
+  end
+
+  def create_teams
+    @number_teams = params[:num_teams]
+  end
+
+
   # GET /students/new
   def new
     @student = Student.new

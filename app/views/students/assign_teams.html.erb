@@ -1,0 +1,9 @@
+<h1>How many teams would you like?</h1>
+
+ <%= form_tag("/students/create_teams", method: "post") do %>
+  <%= label_tag(:num_teams, "Num Teams") %>
+  <%= text_field_tag(:num_teams) %>
+  <%= submit_tag("Create!") %>
+<% end %>
+
+

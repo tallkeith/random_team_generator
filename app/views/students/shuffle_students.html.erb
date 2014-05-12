@@ -1,10 +1,8 @@
-<%= @new_array %>
-<br>
-<br>
 <% i = 0 %>
 <% @new_array.each do %>
 	<% o = 0 %>
 	<% a_array = @new_array[i] %>
+	<%= "This is team #{i+1}: " %> 
 	<% a_array.each do %>
 		<%= a_array[o] %>
 		<% o += 1%>

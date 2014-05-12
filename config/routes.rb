@@ -6,9 +6,10 @@ Rails.application.routes.draw do
 
   get 'students/shuffle_students' => 'students#shuffle_students'
   
-  get "teams/number_teams" => "teams#number_teams"
+  get "students/assign_teams" => "students#assign_teams"
   
-  post "teams/create_teams" => "teams#create_teams"
+  post "students/create_teams" => "students#create_teams"
+
 
   resources :teams
 
