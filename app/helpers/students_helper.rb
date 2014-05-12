@@ -4,7 +4,9 @@ module StudentsHelper
     	@s_array = s_array = []
       		@students.each do |student|
         		@s_array.push(student.first_name)
-      		end
-  	end
 
+      		end	
+      	@new_array = @s_array.shuffle.in_groups(2, false)
+      
+  	end
 end

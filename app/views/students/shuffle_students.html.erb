@@ -1,2 +1,15 @@
-<%= @s_array.shuffle.in_groups(2, false) %>
-
+<%= @new_array %>
+<br>
+<br>
+<% i = 0 %>
+<% @new_array.each do %>
+	<% o = 0 %>
+	<% a_array = @new_array[i] %>
+	<% a_array.each do %>
+		<%= a_array[o] %>
+		<% o += 1%>
+	<% end %>
+	<% i += 1%>
+	<br>	
+<% end %>
+	
