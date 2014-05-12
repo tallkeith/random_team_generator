@@ -2,9 +2,9 @@ Rails.application.routes.draw do
 
   root 'teams#home'
 
-get 'teams/assign_teams'
+  get 'teams/assign_teams'
 
- get 'students/shuffle_students' => 'students#shuffle_students'
+  get 'students/shuffle_students' => 'students#shuffle_students'
   
   get "teams/number_teams" => "teams#number_teams"
   
